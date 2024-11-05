@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Classificador de Nível de Herói</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Desafio Classificador de Nível de Herói</h1>
+        
+        <h2>Objetivo</h2>
+        <p>Este projeto tem como objetivo criar um sistema em JavaScript para classificar o nível de um herói com base na sua experiência (XP).</p>
+
+        <h2>Tecnologias Utilizadas</h2>
+        <ul>
+            <li>Variáveis</li>
+            <li>Operadores</li>
+            <li>Laços de Repetição</li>
+            <li>Estruturas de Decisão</li>
+        </ul>
+
+        <h2>Regras de Classificação</h2>
+        <p>O nível do herói é determinado pela quantidade de experiência (<code>XP</code>), conforme as regras abaixo:</p>
+        <ul>
+            <li><code>XP &lt; 1000</code> ➔ Nível: Ferro</li>
+            <li><code>XP</code> entre <code>1001</code> e <code>2000</code> ➔ Nível: Bronze</li>
+            <li><code>XP</code> entre <code>2001</code> e <code>5000</code> ➔ Nível: Prata</li>
+            <li><code>XP</code> entre <code>5001</code> e <code>7000</code> ➔ Nível: Ouro</li>
+            <li><code>XP</code> entre <code>7001</code> e <code>8000</code> ➔ Nível: Platina</li>
+            <li><code>XP</code> entre <code>8001</code> e <code>9000</code> ➔ Nível: Ascendente</li>
+            <li><code>XP</code> entre <code>9001</code> e <code>10000</code> ➔ Nível: Imortal</li>
+            <li><code>XP &gt;= 10001</code> ➔ Nível: Radiante</li>
+        </ul>
+
+        <h2>Saída</h2>
+        <p>A saída do programa exibirá uma mensagem no seguinte formato:</p>
+        <p><code>O Herói de nome {nome} está no nível de {nivel}</code></p>
+
+        <h2>Exemplo de Código</h2>
+        <div class="code-block">
+            <code>
+                let nomeHeroi = "Thor";<br>
+                let experiencia = 7500;<br><br>
+
+                let nivelHeroi;<br><br>
+
+                if (experiencia &lt; 1000) {<br>
+                    &nbsp;&nbsp;nivelHeroi = "Ferro";<br>
+                } else if (experiencia &gt;= 1001 && experiencia &lt;= 2000) {<br>
+                    &nbsp;&nbsp;nivelHeroi = "Bronze";<br>
+                } else if (experiencia &gt;= 2001 && experiencia &lt;= 5000) {<br>
+                    &nbsp;&nbsp;nivelHeroi = "Prata";<br>
+                } else if (experiencia &gt;= 5001 && experiencia &lt;= 7000) {<br>
+                    &nbsp;&nbsp;nivelHeroi = "Ouro";<br>
+                } else if (experiencia &gt;= 7001 && experiencia &lt;= 8000) {<br>
+                    &nbsp;&nbsp;nivelHeroi = "Platina";<br>
+                } else if (experiencia &gt;= 8001 && experiencia &lt;= 9000) {<br>
+                    &nbsp;&nbsp;nivelHeroi = "Ascendente";<br>
+                } else if (experiencia &gt;= 9001 && experiencia &lt;= 10000) {<br>
+                    &nbsp;&nbsp;nivelHeroi = "Imortal";<br>
+                } else if (experiencia &gt;= 10001) {<br>
+                    &nbsp;&nbsp;nivelHeroi = "Radiante";<br>
+                }<br><br>
+
+                console.log(`O Herói de nome ${nomeHeroi} está no nível de ${nivelHeroi}`);
+            </code>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
